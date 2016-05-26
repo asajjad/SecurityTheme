@@ -1,82 +1,130 @@
 ﻿
 .full-size {
-  width: 100% !important;
+    width: 100% !important;
 }
+
 .block {
-  display: block !important;
+    display: block !important;
 }
+
 .inline-block {
-  display: inline-block !important;
+    display: inline-block !important;
 }
+
 .no-display {
-  display: none !important;
+    display: none !important;
 }
+
 .no-margin {
-  margin: 0 !important;
+    margin: 0 !important;
 }
+
 .no-margin-right {
-  margin-right: 0 !important;
+    margin-right: 0 !important;
 }
+
 .no-margin-left {
-  margin-left: 0 !important;
+    margin-left: 0 !important;
 }
+
 .no-margin-top {
-  margin-top: 0 !important;
+    margin-top: 0 !important;
 }
+
 .no-margin-bottom {
-  margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
+
 .no-padding {
-  padding: 0 !important;
+    padding: 0 !important;
 }
+
 .no-padding-left {
-  padding-left: 0 !important;
+    padding-left: 0 !important;
 }
+
 .no-padding-right {
-  padding-right: 0 !important;
+    padding-right: 0 !important;
 }
+
 .no-padding-top {
-  padding-top: 0 !important;
+    padding-top: 0 !important;
 }
+
 .no-padding-bottom {
-  padding-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
+
 .no-float {
-  float: none !important;
+    float: none !important;
 }
+
 .no-visible {
-  visibility: hidden !important;
+    visibility: hidden !important;
 }
+
 .no-border {
-  border: 0 !important;
+    border: 0 !important;
 }
+
 .no-overflow {
-  overflow: hidden !important;
+    overflow: hidden !important;
 }
+
 .no-scroll {
-  overflow: hidden !important;
+    overflow: hidden !important;
 }
+
 .no-scroll-x {
-  overflow-x: hidden !important;
+    overflow-x: hidden !important;
 }
+
 .no-scroll-y {
-  overflow-y: hidden !important;
+    overflow-y: hidden !important;
 }
+
 .no-wrap {
-  white-space: nowrap !important;
+    white-space: nowrap !important;
 }
+
 .no-border-left {
-  border-left: none !important;
+    border-left: none !important;
 }
+
 .no-border-right {
-  border-right: none !important;
+    border-right: none !important;
 }
+
 .no-border-top {
-  border-top: none !important;
+    border-top: none !important;
 }
+
 .no-border-bottom {
-  border-bottom: none !important;
+    border-bottom: none !important;
 }
+
 .transparent-border {
-  border-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+.padding-top-20 {
+    padding-top: 20px !important;
+}
+
+.padding-top-10 {
+    padding-top: 10px !important;
+}
+
+.padding-top-5 {
+    padding-top: 5px !important;
+}
+
+.body-content-default-height {
+    min-height: 700px !important;
+    height: auto;
 }

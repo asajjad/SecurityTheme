@@ -1,43 +1,34 @@
 ﻿@model ManteqSecurityTest.Controllers.LoginViewModel
 
 
-<div class="row" style="margin-top:50px">
+<div class="container">
     @using (Html.BeginForm("Index", "Home", FormMethod.Post))
     {
         <div class="form-group">
-            <label class="col-md-2">
+            <label class="UserName">
                 User Name:
             </label>
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
-            </div>
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
         </div>
-
         <div class="form-group">
-            <label class="col-md-2">
+            <label class="TenantId">
                 Tenant ID:
             </label>
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.TenantId, new { @class = "form-control" })
-            </div>
+            @Html.TextBoxFor(m => m.TenantId, new { @class = "form-control" })
         </div>
-
         <div class="form-group">
-            <label class="col-md-2">
+            <label class="SelectedTenantId">
                 Selected Tenant ID:
             </label>
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.SelectedTenantId, new { @class = "form-control" })
-            </div>
+            @Html.TextBoxFor(m => m.SelectedTenantId, new { @class = "form-control" })
         </div>
 
         <div class="form-group">
-            <input type="submit" class="btn-primary btn" value="Login" />
+            <input type="submit" class="btn bg-teal" value="Login" />
         </div>
-
     }
 </div>
-<div class="row" style="margin-top:50px">
+<div class="container padding-top-20">
     <p>
         Users and their authorization information:
         <br />
