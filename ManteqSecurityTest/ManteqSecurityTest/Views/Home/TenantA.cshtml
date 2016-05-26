@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "TenantA";
+}
+
+<h2>TenantA</h2>
+<div class="row">
+    <ul class="nav navbar-nav">
+        <li id="liClemittance">
+            <div data-role="tile" class="tile bg-teal fg-white">
+                <div class="tile-content iconic">
+                    <span class="icon mif-pencil"></span>
+                </div>
+                <span class="tile-label">Clemittance</span>
+            </div>
+        </li>
+        <li id="liCura">
+            <div data-role="tile" class="tile bg-darkBlue fg-white">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                <span class="tile-label">Cura</span>
+            </div>
+        </li>
+    </ul>
+</div>
+@section Scripts {
+
+    <script>
+        $(function () {
+            $("#liClemittance").click(function () {
+                window.location.href = "/home/Clemittance";
+            });
+            $("#liCura").click(function () {
+                window.location.href = "/home/Cura";
+            });
+        });
+    </script>
+}

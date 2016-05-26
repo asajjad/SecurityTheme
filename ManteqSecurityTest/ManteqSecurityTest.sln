@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManteqSecurityTest", "ManteqSecurityTest\ManteqSecurityTest.csproj", "{9CEFACFA-BAEB-4994-A400-6B2B7E3BEF3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{3E1C3BEA-2D96-4533-8B00-09C7FEE1A2C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{AD0781FA-B924-4D5E-AE4D-E275AAEFE94E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{5DE34FC1-247C-4AD7-9074-4CF8CF012BDF}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\ManteqSecurityTest.json = PublishScripts\Templates\ManteqSecurityTest.json
+		PublishScripts\Templates\ManteqSecurityTest.param.dev.json = PublishScripts\Templates\ManteqSecurityTest.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CEFACFA-BAEB-4994-A400-6B2B7E3BEF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEFACFA-BAEB-4994-A400-6B2B7E3BEF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEFACFA-BAEB-4994-A400-6B2B7E3BEF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEFACFA-BAEB-4994-A400-6B2B7E3BEF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD0781FA-B924-4D5E-AE4D-E275AAEFE94E} = {3E1C3BEA-2D96-4533-8B00-09C7FEE1A2C1}
+		{5DE34FC1-247C-4AD7-9074-4CF8CF012BDF} = {3E1C3BEA-2D96-4533-8B00-09C7FEE1A2C1}
+	EndGlobalSection
+EndGlobal

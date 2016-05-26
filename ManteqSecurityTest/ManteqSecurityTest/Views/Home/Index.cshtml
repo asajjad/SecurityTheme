@@ -1,0 +1,57 @@
+﻿@model ManteqSecurityTest.Controllers.LoginViewModel
+
+
+<div class="row" style="margin-top:50px">
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label class="col-md-2">
+                User Name:
+            </label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2">
+                Tenant ID:
+            </label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.TenantId, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2">
+                Selected Tenant ID:
+            </label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.SelectedTenantId, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn-primary btn" value="Login" />
+        </div>
+
+    }
+</div>
+<div class="row" style="margin-top:50px">
+    <p>
+        Users and their authorization information:
+        <br />
+        <br />
+        <b>abdulwadood@clemittance.com</b> - Manteq Admin
+        <br />
+        <br />
+        <b>a.sajjad@clemittance.com</b> - Tenant Admin (Tenant A)
+        <br />
+        <br />
+        <b>User A</b> - Tenant User (have access to both Tenant A and Tenant B)
+        <br />
+        <br />
+        <b>User B</b> - Tenant User (have access to Tenant A)
+        <br />
+    </p>
+</div>
