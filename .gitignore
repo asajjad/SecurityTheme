@@ -1,3 +1,8 @@
 /ManteqSecurityTest/packages
 /ManteqSecurityTest/ManteqSecurityTest/ManteqSecurityTest.csproj.user
 /ManteqSecurityTest/ManteqSecurityTest/bin
+/ManteqSecurityTest/ManteqSecurityTest/obj
+/ManteqSecurityTest/ManteqSecurityApi/ManteqSecurityApi.csproj.user
+/ManteqSecurityTest/ManteqSecurityApi/bin
+/ManteqSecurityTest/ManteqSecurityApi/obj
+/ManteqSecurityTest/ManteqSecurityApi/Web.config.backup.1

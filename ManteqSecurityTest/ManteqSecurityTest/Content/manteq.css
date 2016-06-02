@@ -5,6 +5,10 @@
     background-color: #f5f5f5;
 }
 
+.navbar {
+    min-height: 80px !important;
+}
+
 .navbar-inverse {
     background-color: #F5F5F5;
     border-color: whitesmoke;
