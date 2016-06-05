@@ -1,48 +1,51 @@
 ﻿@model ManteqSecurityTest.Controllers.LoginViewModel
 
-
 <div class="container">
-    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
-    {
-        <div class="form-group">
-            <label class="UserName">
-                User Name:
-            </label>
-            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
-        </div>
-        <div class="form-group">
-            <label class="TenantId">
-                Tenant ID:
-            </label>
-            @Html.TextBoxFor(m => m.TenantId, new { @class = "form-control" })
-        </div>
-        <div class="form-group">
-            <label class="SelectedTenantId">
-                Selected Tenant ID:
-            </label>
-            @Html.TextBoxFor(m => m.SelectedTenantId, new { @class = "form-control" })
-        </div>
+    <h3>Welcome to Manteq Services</h3>
+</div>
 
-        <div class="form-group">
-            <input type="submit" class="btn bg-teal" value="Login" />
-        </div>
-    }
-</div>
-<div class="container padding-top-20">
-    <p>
-        Users and their authorization information:
-        <br />
-        <br />
-        <b>abdulwadood@clemittance.com</b> - Manteq Admin
-        <br />
-        <br />
-        <b>a.sajjad@clemittance.com</b> - Tenant Admin (Tenant A)
-        <br />
-        <br />
-        <b>User A</b> - Tenant User (have access to both Tenant A and Tenant B)
-        <br />
-        <br />
-        <b>User B</b> - Tenant User (have access to Tenant A)
-        <br />
-    </p>
-</div>
+@*<div class="container">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <div class="form-group">
+                <label class="UserName">
+                    User Name:
+                </label>
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label class="TenantId">
+                    Tenant ID:
+                </label>
+                @Html.TextBoxFor(m => m.TenantId, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label class="SelectedTenantId">
+                    Selected Tenant ID:
+                </label>
+                @Html.TextBoxFor(m => m.SelectedTenantId, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn bg-teal" value="Login" />
+            </div>
+        }
+    </div>
+    <div class="container padding-top-20">
+        <p>
+            Users and their authorization information:
+            <br />
+            <br />
+            <b>abdulwadood@clemittance.com</b> - Manteq Admin
+            <br />
+            <br />
+            <b>a.sajjad@clemittance.com</b> - Tenant Admin (Tenant A)
+            <br />
+            <br />
+            <b>User A</b> - Tenant User (have access to both Tenant A and Tenant B)
+            <br />
+            <br />
+            <b>User B</b> - Tenant User (have access to Tenant A)
+            <br />
+        </p>
+    </div>*@

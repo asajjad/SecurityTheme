@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
 
+
 namespace ManteqSecurityTest.Utility
 {
     public class ManteqAuthorizeAttribute : AuthorizeAttribute
@@ -20,18 +21,19 @@ namespace ManteqSecurityTest.Utility
         {
             bool isAuthorized = false;
             var user = httpContext.User;
-            //if (!user.Identity.IsAuthenticated)
-            //{
-            //    return false;
-            //}
+
+            if (!user.Identity.IsAuthenticated)
+            {
+                return false;
+            }
 
             #region Authorize logic
 
             using (var context = new EntityContext())
             {
-                var userName = user.Identity.Name;
+                var userName = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress").Value;
 #if DEBUG
-                userName = TempUser.UserName;
+                //userName = TempUser.UserName;u
                 //userName = "a.sajjad@clemittance.com";
 #endif
                 var dbUser = context.Users.Include(s => s.Roles).FirstOrDefault(u => u.UserName == userName);
