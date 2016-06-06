@@ -213,6 +213,9 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LicenceController.cs" />
+    <Compile Include="Controllers\ModuleController.cs" />
+    <Compile Include="Controllers\TenantController.cs" />
     <Compile Include="Controllers\TodoListController.cs" />
     <Compile Include="Controllers\UserProfileController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -326,6 +329,9 @@
     <Content Include="Views\TodoList\Index.cshtml" />
     <Content Include="Views\UserProfile\Index.cshtml" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
+    <Content Include="Views\Module\Index.cshtml" />
+    <Content Include="Views\Licence\Index.cshtml" />
+    <Content Include="Views\Tenant\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
