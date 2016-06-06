@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="ManteqSecurityApp">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,16 +22,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/home/index" class="navbar-brand"><img src="~/images/manteq-logo.png" /></a>
+                <a href="/home/index" class="navbar-brand"><img src=@Url.Content("~/images/manteq-logo.png") /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    @*<li>@Html.ActionLink("Profile", "Index", "UserProfile")</li>*@
-                    @*<li>@Html.ActionLink("To Do List", "Index", "TodoList")</li>*@
-                    @* <li>@Html.ActionLink("TenantA", "TenantA", "Home")</li>
-                        <li>@Html.ActionLink("TenantB", "TenantB", "Home")</li>*@
-                    @*<li>@Html.ActionLink("ManteqAdminPage", "ManteqAdminPage", "Home")</li>*@
-                    @*<li>@Html.ActionLink("TenantAdminDashboard", "TenantAdminDashboard", "Home")</li>*@
+                    
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -51,6 +46,8 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/app")
     @RenderSection("scripts", required: false)
 </body>
 </html>
